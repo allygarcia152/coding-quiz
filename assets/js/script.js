@@ -8,33 +8,15 @@ choiceA.textContent = "TRUE";
 choiceB.textContent = "False";
 choiceA.className = "btn btn-success";
 choiceB.className = "btn btn-danger";
+// choiceA.appendChild(questionOne);
+// choiceB.appendChild(questionOne);
 
-//list of quiz questions
-var questionOne = {
-  question: "True or false: The DOM is build into the JavaScript language.",
-  choiceA: "True",
-  choiceB: "False",
-};
-var questionTwo = {
-  question: "True or false: Arrays in JaveScript can be used to store booleans.",
-  choiceA: "True",
-  choiceB: "False",
-};
-var questionThree = {
-  question: "True or false: Commonly used data types include alerts.",
-  choiceA: "True",
-  choiceB: "False",
-};
-var questionFour = {
-  question: "True or false: Bootstrap can be used to create modals.",
-  choiceA: "True",
-  choiceB: "False",
-};
-var questionFive = {
-  question: "True or false: In the DOM's event object, the target property refers to the HTML element that was interected with to dispach the event.",
-  choiceA: "True",
-  choiceB: "False",
-};
+//variables of quiz question
+var questionOne = "True or false: The DOM is build into the JavaScript language.";
+var questionTwo = "True or false: Arrays in JaveScript can be used to store booleans.";
+var questionThree =  "True or false: Commonly used data types include alerts.";
+var questionFour = "True or false: Bootstrap can be used to create modals.";
+var questionFive = "True or false: In the DOM's event object, the target property refers to the HTML element that was interected with to dispach the event.";
 
 //timer
 function countdown(){
@@ -62,10 +44,11 @@ startBtn.addEventListener("click", function(){
 function showQuestions (){
   //for loop for length of array of questions 
   for (var i=0; i<5; i++) {
-    questionDisplayEl.textContent = questionOne.question.choiceA.choiceB;
+    questionDisplayEl = questionOne;
   }
-  // if answer is wrong, time is taken from time
-}
+  console.log(questionDisplayEl);
+  // if answer is wrong, time is taken from timeLeft
+};
 
 //if all questions are answered game is over
 // when game is over, player enters initials and saves score - score is amount of time left
