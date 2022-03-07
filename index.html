@@ -12,15 +12,17 @@
 <body>
   <header class="navbar navbar-expand-md navbar-light bg-light d-inline-flex justify-content-between w-100">
     <a class="nav-item nav-link" href="#">View high scores</a>
-    <p class="nav-item mr-5 my-auto d-inline" id="timer"></p>
+    <p class="nav-item mr-5 my-auto d-inline text-decoration-none" id="timer"></p>
   </header>
-  <div class="questions">
-    <div class="question">
-
+  
+  <div class="container row align-middle min-vw-100 min-vh-100 d-flex questions">
+    <div id="question" class="col-6 container min-vh-100 bg-info text-light text-center">
+      <p class="display-4 mt-5 pt-5">Coding Quiz Challenge</p>
+      <p class="instructions pl-3 pr-3">Try to answer the following code-related questions within the time limit. Keep in mind that incorrect answers will penalize your score/time by 5 seconds.</p>
+      <button type="button" class="btn btn-light" id="start-btn">Start Quiz</button>
     </div>
-    <div class="answers">
-
-    </div>
+    
+    <div id="questions" class="col-6 container min-hv-100 w-100 h-100 my-auto mx-auto text-center"></div>
 
   </div>
 </body>
